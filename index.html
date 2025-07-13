@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,41 +16,6 @@
 
     <style>
         :root {
-            --bg-color: #f1f5f9;
-            /* slate-100 */
-            --text-color: #1e293b;
-            /* slate-800 */
-            --text-color-light: #64748b;
-            /* slate-500 */
-            --header-color: #0f172a;
-            /* slate-900 */
-            --card-bg: #ffffff;
-            --card-border-color: #e2e8f0;
-            /* slate-200 */
-            --item-bg: #f8fafc;
-            /* slate-50 */
-            --item-bg-hover: #f1f5f9;
-            /* slate-100 */
-            --input-bg: #f8fafc;
-            /* slate-50 */
-            --input-border-color: #cbd5e1;
-            /* slate-300 */
-            --modal-bg: #ffffff;
-            --modal-border-color: #e2e8f0;
-            /* slate-200 */
-            --scrollbar-track: #f1f5f9;
-            --scrollbar-thumb: #cbd5e1;
-            --scrollbar-thumb-hover: #94a3b8;
-            --progress-bg: #e2e8f0;
-            /* slate-200 */
-            --today-bg: #e0e7ff;
-            /* indigo-100 */
-            --day-bg-red: rgba(239, 68, 68, 0.2);
-            --day-bg-yellow: rgba(234, 179, 8, 0.2);
-            --day-bg-green: rgba(34, 197, 94, 0.2);
-        }
-
-        html[data-theme='dark'] {
             --bg-color: #171717;
             /* neutral-900 */
             --text-color: #f5f5f5;
@@ -1102,14 +1067,6 @@
                     }
                 }
 
-                // Theme handling
-                const message = event.data;
-                if (typeof message === 'string' && message.startsWith('set-theme-')) {
-                    const theme = message.split('-')[2];
-                    if (theme === 'light' || theme === 'dark') {
-                        document.documentElement.dataset.theme = theme;
-                    }
-                }
             });
         });
     </script>
